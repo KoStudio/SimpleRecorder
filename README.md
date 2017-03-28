@@ -11,6 +11,46 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ![sample gif](https://github.com/KoStudio/SimpleRecorder/blob/master/SimpleRecorderSample.gif)
 
+```Objective-c
+@property(nonatomic, strong) SimpleRecorder *recorder;
+```
+
+```Objective-c
+self.recorder = [[SimpleRecorder alloc] init];
+self.recorder.delegate = self;
+self.recorder.soundName = @"record";
+
+}
+
+- (IBAction)actionRecord:(id)sender {
+[self.recorder startRecord];
+}
+- (IBAction)actionPlay:(id)sender {
+[self.recorder startPlay];
+}
+- (IBAction)actionStop:(id)sender {
+if ([self.recorder isRecording]) {
+[self.recorder stopRecord];
+}
+
+[self.recorder stopPlay];
+}
+
+
+```
+
+##Delegate Methods
+```Objective-C
+@protocol SimpleRecorderDelegate<NSObject>
+
+@optional
+- (void) recorderStartRecord:(NSString *)soundName;
+- (void) recorderFinishedRecord:(NSString *)soundName;
+- (void) recorderStartPlay:(NSString *)soundName;
+- (void) recorderFinishedPlay:(NSString *)soundName;
+
+@end
+```
 ## Requirements
 
 ## Installation
