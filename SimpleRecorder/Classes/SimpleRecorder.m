@@ -55,6 +55,15 @@
 #pragma mark -
 @implementation RecorderProgressView
 
++ (NSBundle *)currentBundle{
+    
+    NSBundle *frameworkBundle = [NSBundle bundleForClass:[self class]];//get framework address
+    NSURL    *assetsBundleURL = [frameworkBundle URLForResource:@"SimpleRecorder" withExtension:@"bundle"];
+    if (assetsBundleURL)
+        return [NSBundle bundleWithURL:assetsBundleURL];
+    return frameworkBundle;
+}
+
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
@@ -71,8 +80,9 @@
         int i = _curCount / (_allCount / 16);//絵は16枚
         i = MIN(MAX(1, i), 16);
         
+        NSBundle *thisBundle  = [RecorderProgressView currentBundle];
         NSString *imgName     = [NSString stringWithFormat:kTipImg, i];
-        UIImage *imgCurSrc    = [UIImage imageNamed:imgName];
+        UIImage *imgCurSrc    = [UIImage imageNamed:imgName inBundle:thisBundle compatibleWithTraitCollection:nil];
         CGFloat  ratio        = rectContent.size.height / imgCurSrc.size.height;
         CGRect   rectCurImage = CGRectMake((rectContent.size.width - imgCurSrc.size.width * ratio) / 2,
                                            (rectContent.size.height - imgCurSrc.size.height * ratio) / 2,
@@ -415,5 +425,6 @@
 {
     [player stop];
 }
+
 
 @end
