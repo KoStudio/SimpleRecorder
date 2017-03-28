@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![sample gif](https://github.com/KoStudio/SimpleRecorder/blob/master/SimpleRecorderSample.gif)
+
 ## Requirements
 
 ## Installation
