@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleRecorder'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A simple recorder with Record And Play Functions.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ A Recorder with Record and Play functions. Also you can show a recording view to
 
   s.source_files = 'SimpleRecorder/Classes/**/*'
   
-  # s.resource_bundles = {
-  #  'SimpleRecorder' => ['SimpleRecorder/Assets/*.png']
-  #}
+  s.resource_bundles = {
+    'SimpleRecorder' => ['SimpleRecorder/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit'
