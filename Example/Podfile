@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SimpleRecorder_Example' do
+  pod 'SimpleRecorder', :path => '../'
+
+  target 'SimpleRecorder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
