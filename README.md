@@ -11,9 +11,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ![sample gif](https://github.com/KoStudio/SimpleRecorder/blob/master/SimpleRecorderSample.gif)
 
+Property Definition
+
 ```Objective-c
 @property(nonatomic, strong) SimpleRecorder *recorder;
 ```
+
 
 ```Objective-c
 self.recorder = [[SimpleRecorder alloc] init];
@@ -23,23 +26,22 @@ self.recorder.soundName = @"record";
 }
 
 - (IBAction)actionRecord:(id)sender {
-[self.recorder startRecord];
+	[self.recorder startRecord];
 }
 - (IBAction)actionPlay:(id)sender {
-[self.recorder startPlay];
+	[self.recorder startPlay];
 }
 - (IBAction)actionStop:(id)sender {
-if ([self.recorder isRecording]) {
-[self.recorder stopRecord];
+	if ([self.recorder isRecording]) {
+		[self.recorder stopRecord];
+	}
+
+	[self.recorder stopPlay];
 }
-
-[self.recorder stopPlay];
-}
-
-
 ```
 
-##Delegate Methods
+Delegate Methods
+
 ```Objective-C
 @protocol SimpleRecorderDelegate<NSObject>
 
