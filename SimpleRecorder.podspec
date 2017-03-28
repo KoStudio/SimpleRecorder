@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleRecorder'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SimpleRecorder.'
+  s.version          = '1.0.0'
+  s.summary          = 'A simple recorder with Record And Play Functions.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Recorder with Record and Play functions. Also you can show a recording view to show on screen.
                        DESC
 
   s.homepage         = 'https://github.com/KoStudio/SimpleRecorder'
@@ -32,11 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SimpleRecorder/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SimpleRecorder' => ['SimpleRecorder/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'SimpleRecorder' => ['SimpleRecorder/Assets/*.png']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

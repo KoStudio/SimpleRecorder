@@ -8,8 +8,10 @@
 
 #import "KOViewController.h"
 
-@interface KOViewController ()
+#import <SimpleRecorder/SimpleRecorder.h>
 
+@interface KOViewController ()<SimpleRecorderDelegate>
+@property(nonatomic, strong) SimpleRecorder *recorder;
 @end
 
 @implementation KOViewController
@@ -17,13 +19,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.recorder = [[SimpleRecorder alloc] init];
+    self.recorder.delegate = self;
+    self.recorder.soundName = @"record";
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)actionRecord:(id)sender {
+    [self.recorder startRecord];
 }
+- (IBAction)actionPlay:(id)sender {
+    [self.recorder startPlay];
+}
+- (IBAction)actionStop:(id)sender {
+    if ([self.recorder isRecording]) {
+        [self.recorder stopRecord];
+    }
+    
+    [self.recorder stopPlay];
+}
+
 
 @end

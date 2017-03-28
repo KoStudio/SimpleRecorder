@@ -1,0 +1,16 @@
+PODS:
+  - SimpleRecorder (0.1.0)
+
+DEPENDENCIES:
+  - SimpleRecorder (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleRecorder:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SimpleRecorder: c4866c288f2f1dfd7ad9a17d787d0a6fffc8f5be
+
+PODFILE CHECKSUM: 381953c1b75394df06ac733a167f2a492262eccc
+
+COCOAPODS: 1.2.0
