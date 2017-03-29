@@ -12,5 +12,5 @@ before_install:
 script:
 - set -o pipefail 
 #- xcodebuild test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example test
+- xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator9.3 test
 - pod lib lint
