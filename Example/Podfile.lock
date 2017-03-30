@@ -1,5 +1,5 @@
 PODS:
-  - SimpleRecorder (0.1.0)
+  - SimpleRecorder (1.0.1)
 
 DEPENDENCIES:
   - SimpleRecorder (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SimpleRecorder: c4866c288f2f1dfd7ad9a17d787d0a6fffc8f5be
+  SimpleRecorder: be66eb53476cf495a0938fcf371ac0cc78963023
 
 PODFILE CHECKSUM: 381953c1b75394df06ac733a167f2a492262eccc
 
