@@ -16,5 +16,6 @@ script:
   #xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example run-tests -test-sdk iphonesimulator9.3 \
   
   #xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' -enableCodeCoverage YES | xcpretty
-  xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' | xcpretty
+- set -o pipefail
+- xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' | xcpretty
 - pod lib lint
