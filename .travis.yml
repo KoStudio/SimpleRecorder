@@ -10,8 +10,6 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
-#- set -o pipefail 
-#  && xcodebuild -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example build-for-testing -destination 'platform=iOS Simulator,name=iPhone 6'
-#  && xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example run-tests -test-sdk iphonesimulator9.3
-- set -o pipefail && xcodebuild test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example build-for-testing -destination 'platform=iOS Simulator,name=iPhone 6' && xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example run-tests -test-sdk iphonesimulator9.3
+#- set -o pipefail && xcodebuild test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
