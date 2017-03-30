@@ -7,8 +7,6 @@ language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- brew update
-- brew install xctool
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
