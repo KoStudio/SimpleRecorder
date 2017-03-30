@@ -36,7 +36,7 @@ A Recorder with Record and Play functions. Also you can show a recording view to
     'SimpleRecorder' => ['SimpleRecorder/Assets/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = ['SimpleRecorder/Classes/**/*.h, 'Pod/Classes/**/*.h']
   # s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
