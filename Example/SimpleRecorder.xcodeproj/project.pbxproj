@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01531B26B45238AAF306CF9E /* Pods_SimpleRecorder_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6588E265E7351D7539DF6A83 /* Pods_SimpleRecorder_Example.framework */; };
-		0C26231D1E8D4EB700E234D6 /* Pods_SimpleRecorder_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6588E265E7351D7539DF6A83 /* Pods_SimpleRecorder_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -36,20 +34,6 @@
 			remoteInfo = SimpleRecorder;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0C26231E1E8D4EB700E234D6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0C26231D1E8D4EB700E234D6 /* Pods_SimpleRecorder_Example.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E97B67DF85E787E6C5F8B52 /* Pods-SimpleRecorder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRecorder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleRecorder_Tests/Pods-SimpleRecorder_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01531B26B45238AAF306CF9E /* Pods_SimpleRecorder_Example.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -224,7 +207,6 @@
 				6003F588195388D20070C39A /* Resources */,
 				BCB481BB0D9A20D9B4889697 /* [CP] Embed Pods Frameworks */,
 				24F53EA423A95580CEEF547F /* [CP] Copy Pods Resources */,
-				0C26231E1E8D4EB700E234D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
