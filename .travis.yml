@@ -17,5 +17,5 @@ script:
   
   #xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' -enableCodeCoverage YES | xcpretty
 - set -o pipefail
-- xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' | xcpretty
+- xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
 - pod lib lint
