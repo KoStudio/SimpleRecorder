@@ -254,6 +254,7 @@
 						DevelopmentTeam = D7G488KFCE;
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = D7G488KFCE;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -559,6 +560,7 @@
 			baseConfigurationReference = E576427E856DF67A14427659 /* Pods-SimpleRecorder_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D7G488KFCE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -582,6 +584,7 @@
 			baseConfigurationReference = 5E97B67DF85E787E6C5F8B52 /* Pods-SimpleRecorder_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D7G488KFCE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
