@@ -253,7 +253,6 @@
 					};
 					6003F5AD195388D20070C39A = {
 						DevelopmentTeam = D7G488KFCE;
-						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
 			};
@@ -559,7 +558,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E576427E856DF67A14427659 /* Pods-SimpleRecorder_Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,7 +572,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRecorder_Example.app/SimpleRecorder_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -583,7 +580,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E97B67DF85E787E6C5F8B52 /* Pods-SimpleRecorder_Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +590,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRecorder_Example.app/SimpleRecorder_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
