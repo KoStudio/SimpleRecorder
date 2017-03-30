@@ -11,5 +11,6 @@ before_install:
 - pod install --project-directory=Example
 script:
 - set -o pipefail 
-- xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator10.2 test
+#- xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -sdk iphonesimulator9.3 run-test
+- xctool -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example run-tests -test-sdk iphonesimulator9.3
 - pod lib lint
