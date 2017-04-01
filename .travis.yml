@@ -2,7 +2,7 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8.2.1
+osx_image: xcode8.3
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
@@ -17,5 +17,5 @@ script:
   
   #xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' -enableCodeCoverage YES | xcpretty
 - set -o pipefail
-- xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder-Example -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
+- xcodebuild clean test -workspace Example/SimpleRecorder.xcworkspace -scheme SimpleRecorder_Tests -destination 'platform=iOS Simulator,name=iPhone 6s' | xcpretty
 - pod lib lint
