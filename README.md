@@ -1,4 +1,4 @@
-# SimpleRecorder
+# [SimpleRecorder](https://kostudio.github.io/SimpleRecorder/)
 
 [![CI Status](http://img.shields.io/travis/KoStudio/SimpleRecorder.svg?style=flat)](https://travis-ci.org/KoStudio/SimpleRecorder)
 [![Version](https://img.shields.io/cocoapods/v/SimpleRecorder.svg?style=flat)](http://cocoapods.org/pods/SimpleRecorder)
